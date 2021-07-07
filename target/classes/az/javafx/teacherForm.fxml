@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: #0079b5; -fx-border-width: 10px;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="az.javafx.TeacherFormController">
+    <top>
+        <Pane prefHeight="88.0" prefWidth="580.0" style="-fx-background-color: #5cc9ff;" BorderPane.alignment="CENTER">
+            <children>
+                <Pane layoutX="155.0" layoutY="-86.0" prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Label layoutX="-103.0" layoutY="107.0" opacity="0.73" text="Teacher Managment App- Group 3" textFill="#0000007b">
+                            <font>
+                                <Font name="Microsoft YaHei Light" size="30.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+    </top>
+    <bottom>
+        <Pane prefHeight="22.0" prefWidth="580.0" style="-fx-background-color: #5cc9ff;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="258.0" layoutY="3.0" prefHeight="17.0" prefWidth="70.0" text="2020-2021" />
+                <TextField layoutX="206.0" layoutY="145.0" prefHeight="31.0" prefWidth="180.0" />
+            </children>
+        </Pane>
+    </bottom>
+    <center>
+        <Pane prefHeight="269.0" prefWidth="580.0" style="-fx-background-color: #d4f1ff;" BorderPane.alignment="CENTER">
+            <children>
+                <TextField layoutX="196.0" layoutY="135.0" prefHeight="31.0" prefWidth="180.0" />
+                <Label layoutX="196.0" layoutY="114.0" text="Username">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Pane layoutX="6.0" layoutY="6.0" prefHeight="259.0" prefWidth="569.0" style="-fx-background-color: #d4f1ff;">
+                    <children>
+                        <TextField fx:id="firstNameField" layoutX="10.0" layoutY="86.0" prefHeight="25.0" prefWidth="164.0" />
+                        <Label layoutX="11.0" layoutY="71.0" text="Firstname">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="phoneField" layoutX="11.0" layoutY="130.0" prefHeight="25.0" prefWidth="163.0" />
+                        <Label layoutX="202.0" layoutY="116.0" text="Email">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="22.0" text="Teacher From" textFill="#000000ea">
+                            <font>
+                                <Font name="Bell MT" size="30.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="saveBtn" layoutX="452.0" layoutY="19.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="53.0" style="-fx-background-color: green; -fx-border-color: white; -fx-border-radius: 5px;" text="Save" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font></Button>
+                        <TextField fx:id="surnameField" layoutX="202.0" layoutY="86.0" prefHeight="25.0" prefWidth="168.0" />
+                        <Label layoutX="203.0" layoutY="72.0" text="Surname">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="395.0" layoutY="116.0" text="DOB">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="12.0" layoutY="116.0" text="Phone">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="seriaNumField" layoutX="394.0" layoutY="86.0" prefHeight="25.0" prefWidth="173.0" />
+                        <Label layoutX="393.0" layoutY="73.0" text=" Seria Number">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="emailField" layoutX="201.0" layoutY="130.0" prefHeight="25.0" prefWidth="168.0" />
+                        <DatePicker fx:id="dobField" layoutX="394.0" layoutY="130.0" prefHeight="12.0" prefWidth="166.0" />
+                        <Button fx:id="ignoreBtn" layoutX="510.0" layoutY="19.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="58.0" style="-fx-background-color: red; -fx-border-color: white; -fx-border-radius: 5px;" text="Ignore" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font></Button>
+                        <Label fx:id="successMessage" layoutX="176.0" layoutY="226.0" prefHeight="28.0" prefWidth="239.0" textFill="#403a3a">
+                            <font>
+                                <Font name="System Bold Italic" size="15.0" />
+                            </font>
+                        </Label>
+                        <Group layoutX="182.0" layoutY="209.0">
+                            <children>
+                                <RadioButton fx:id="femaleRadio" layoutX="19.0" mnemonicParsing="false" text="Female" />
+                                <RadioButton fx:id="maleRadio" layoutX="111.0" layoutY="1.0" mnemonicParsing="false" text="Male" />
+                            </children>
+                        </Group>
+                        <Label fx:id="successMessage1" layoutX="204.0" layoutY="232.0" prefHeight="22.0" prefWidth="198.0" textFill="RED">
+                            <font>
+                                <Font name="System Bold Italic" size="15.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+    </center>
+</BorderPane>
